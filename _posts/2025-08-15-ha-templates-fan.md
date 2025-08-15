@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Home Assistant Templates: fan
+title: Home Assistant Template fan
 subtitle: Digging HA Dungeons
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
