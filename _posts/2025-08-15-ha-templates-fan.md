@@ -4,7 +4,7 @@ title: Home Assistant Template fan
 subtitle: Digging HA Dungeons
 cover-img: /assets/img/home-automation-banner1.jpg
 thumbnail-img: /assets/img/homeassistant-logo.png
-share-img: /assets/img/home-automation-banner1.jph
+share-img: /assets/img/home-automation-banner1.jpg
 tags: [homeassistant]
 author: Arjan
 ---
