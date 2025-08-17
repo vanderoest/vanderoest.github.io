@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Home Assistant Template fan
+title: Home Assistant Template Integration fan
 subtitle: Digging HA Dungeons
 cover-img: /assets/img/home-automation-banner1.jpg
 thumbnail-img: /assets/img/homeassistant-logo.png
@@ -17,8 +17,8 @@ That made the solution straightforward: I used a Qubino Flush 0-10V sourcing dim
 
 This worked, but it came with a long-standing irritation. Since the Qubino is technically a dimmer, Home Assistant tagged it as a light. HomeKit happily followed, so in the app it showed up as a lamp while it was actually ventilation. Commands like “set ventilation to 20%” worked fine because of the name, but the big issue: when I said “switch off all lights,” the ventilation also died completely. Not great.
 
-Time to fix that. The device domain needed to become fan instead of light. You can’t just flip that directly, but you can create a fan template that controls the dimmer. Then you only export the fan device to HomeKit. Problem solved.
-The template syntax changed recently and it threw me off for a while, but after some digging this turned out to be the way forward:
+Time to fix that. The device domain needed to become fan instead of light. You can’t just flip that directly, but you can create a virtual fan entity via the `Template integration` (not to be confused eith the concept of Templating) that controls the dimmer. Then you only export the virtual fan device to HomeKit. Problem solved.
+The YAML syntax for the Template integration changed recently and it threw me off for a while, but after some digging this turned out to be the way forward:
 
 ```
 template:
