@@ -45,5 +45,35 @@ template:
               {{ (percentage / 100 * 255) | int }}
 ```
 
+Note that Visual Code Studio will warn on the second line with `property fan not allowed`, but this is not true. I [raised an issue](https://github.com/hassio-addons/addon-vscode/issues/1022) with the maintainer of the VSCode-addon.
+
+As reference, this used to be the old but now deprecated method using the fan template:
+
+```
+fan:
+  - platform: template
+    fans:
+      ventilatie_zolder:
+        unique_id: ventilatie_zolder
+        friendly_name: "Ventilatie Zolder"
+        value_template: "{{ states('light.ventilatie_zolder') }}"
+        percentage_template: >
+          {{ (state_attr('light.ventilatie_zolder', 'brightness') / 255 * 100) | int }}
+        turn_on:
+          action: light.turn_on
+          target: 
+            entity_id: light.ventilatie_zolder
+        turn_off:
+          action: light.turn_off
+          target:
+            entity_id: light.ventilatie_zolder
+        set_percentage:
+          action: light.turn_on
+          target: 
+            entity_id: light.ventilatie_zolder
+          data:
+            brightness: >
+              {{ ( percentage / 100 * 255) | int }}  
+```
 
 
