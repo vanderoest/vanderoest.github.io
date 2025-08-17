@@ -1,16 +1,10 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Things you didn't know and was afraid to ask
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Arjan van der Oest and in my daily job I work as a mobile telecom specialist. I live with my partner Willem in Almere, The Netherlands and have to lovely Burmese cats: Jip and Floor. We are both comitted vegetarians and drive electric vehicles. Some brief must-knows:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+- I make great fresh vegetarian lasagna
+- I like to nerd around with my Home Automation 
